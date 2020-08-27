@@ -69,7 +69,7 @@
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'Login',
     props: {
       source: String,
     },

@@ -72,6 +72,7 @@
 
 <script>
   export default {
+    name: 'TheMenu',
     props: {
       source: String,
     },
