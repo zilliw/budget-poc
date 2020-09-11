@@ -1,19 +1,19 @@
 <template>
   <v-app>
     <v-main>
-      <Login/>
+      <router-link to="/"></router-link>
+      <router-view/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Login from './views/Login';
 
 export default {
   name: 'App',
 
   components: {
-    Login,
+
   },
 
   data: () => ({
