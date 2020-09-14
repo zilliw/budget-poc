@@ -22,7 +22,7 @@
               class="mb-2"
               v-bind="attrs"
               v-on="on"
-            >New Item</v-btn>
+            >Ajouter un collaborateur</v-btn>
           </template>
           <v-card>
             <v-card-title>
@@ -33,7 +33,7 @@
               <v-container>
                 <v-row>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.name" label="Dessert name"></v-text-field>
+                    <v-text-field v-model="editedItem.name" label="Nom du collaborateur"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
                     <v-text-field v-model="editedItem.calories" label="Calories"></v-text-field>
@@ -95,8 +95,15 @@
         { text: 'janvier', value: 'calories' },
         { text: 'février', value: 'fat' },
         { text: 'Mars', value: 'carbs' },
-        { text: 'Avril', value: 'carbs' },
-        { text: 'Mai', value: 'actions', sortable: false },
+        { text: 'Avril', value: 'avril' },
+        { text: 'Mai', value: 'mai', sortable: false },
+        { text: 'Juin', value: 'juin', sortable: false },
+        { text: 'Juillet', value: 'juil', sortable: false },
+        { text: 'Aout', value: 'auot', sortable: false },
+        { text: 'Septembre', value: 'sep', sortable: false },
+        { text: 'Octobre', value: 'octb', sortable: false },
+        { text: 'Novembre', value: 'nov', sortable: false },
+        { text: 'Décembre', value: 'dec', sortable: false },
       ],
       desserts: [],
       editedIndex: -1,
@@ -130,25 +137,25 @@
       initialize () {
         this.desserts = [
           {
-            name: 'Frozen Yogurt',
+            name: 'Anis BEN HAMDA',
             calories: 159,
             fat: 6.0,
             carbs: 24,
           },
           {
-            name: 'Ice cream sandwich',
+            name: 'Nasreddine JERIBI',
             calories: 237,
             fat: 9.0,
             carbs: 37,
           },
           {
-            name: 'Eclair',
+            name: 'Houssem BEN CHIKHA',
             calories: 262,
             fat: 16.0,
             carbs: 23,
           },
           {
-            name: 'Cupcake',
+            name: 'Ahmed CHAOUCH',
             calories: 305,
             fat: 3.7,
             carbs: 67,
