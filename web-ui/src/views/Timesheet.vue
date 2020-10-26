@@ -36,10 +36,10 @@
                     <v-text-field v-model="editedItem.name" label="Nom du collaborateur"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.calories" label="Calories"></v-text-field>
+                    <v-text-field v-model="editedItem.calories" label="Janvier"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.fat" label="Fat (g)"></v-text-field>
+                    <v-text-field v-model="editedItem.fat" label="Février"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="4">
                     <v-text-field v-model="editedItem.carbs" label="Carbs (g)"></v-text-field>
@@ -137,29 +137,23 @@
       initialize () {
         this.desserts = [
           {
-            name: 'Anis BEN HAMDA',
+            name: 'Anis BH',
             calories: 159,
             fat: 6.0,
             carbs: 24,
           },
           {
-            name: 'Nasreddine JERIBI',
+            name: 'Nasreddine J',
             calories: 237,
             fat: 9.0,
             carbs: 37,
           },
           {
-            name: 'Houssem BEN CHIKHA',
+            name: 'Houssem BC',
             calories: 262,
             fat: 16.0,
             carbs: 23,
-          },
-          {
-            name: 'Ahmed CHAOUCH',
-            calories: 305,
-            fat: 3.7,
-            carbs: 67,
-          },
+          }
         ]
       },
       editItem (item) {
