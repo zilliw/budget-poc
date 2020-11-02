@@ -128,7 +128,7 @@
           text: 'Configuration',
           model: false,
           children: [
-            { text: 'Liste des société' },
+            { text: 'Liste des sociétés' },
             { text: 'Liste des consultants' },
           ],
         },
